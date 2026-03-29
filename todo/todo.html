@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="big_pattern">
+        <div class="head">
+        <div class="git">
+            <a href="#">
+                <img src="png/github.svg" alt="">
+            </a>
+        </div>
+        <div class="about">
+            <a href="#">作者</a>
+        </div>
+        <div class="lang">
+            <a href="#">En</a>
+            <span>/</span>
+            <a href="#" class="chi">中</a>
+        </div>
+        </div>
+        <div class="wrapper">
+            <div class="todo_main">
+                <div class="todo_header">
+                    <div class="title">
+                        <img src="png/todo.svg" alt="">
+                        <span></span>
+                        <span></span>
+                        <div class=""></div>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="新增待办事项..." class="add_content">
+                        <button type="button" class="btn submit_btn">提交</button>
+                    </div>
+                    
+                </div>
+                <div class="container_main">
+                    <div class="todo_list_box">
+                        <div class="bar_message">
+                            <button type="button" value="全部标为完成" class="btn btn_complete_all">
+                                全部标为完成
+                            </button>
+                            <div class="bar_message_text">
+                                 今日事今日毕，勿将今事待明日!.☕
+                            </div>
+                        </div>
+                        <ul class="todo_list">
+                            <!-- <li>
+                                <div class="content completed">一</div>
+                                <div class="todo_btn btn_finish"></div>
+                                <div class="todo_btn btn_delete"></div>
+                            </li>
+                            <li>
+                                <div class="content">二</div>
+                                <div class="todo_btn btn_unfinish"></div>
+                                <div class="todo_btn btn_delete"></div>
+                            </li> -->
+                        </ul>
+                        <div class="bar_message bottom"></div>
+                    </div>
+                    <div class="side_bar">
+                        <div class="open">
+                            开✨
+                        </div>
+                        <div class="todo_footer">
+                            <ul class="check">
+                                <li class="all">全部</li>
+                                <li class="unfinished">进行中</li>
+                                <li class="finished">已完成</li>
+                                <li class="deleted">回收站</li>
+                            </ul>
+                            <ul class="adjust">
+                                <li class="complete_all">全部标记为已完成</li>
+                                <li class="clear_completed">清除已完成</li>
+                                <li class="clear_all">清除全部</li>
+                            </ul>
+                            <ul class="data_save">
+                                <li class="export_data">导出数据</li>
+                                <li class="import_data">导入(txt/json)</li>
+                                <input type="file" id="importFile" style="display: none;" accept=".json">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template class="temp">
+        <li id="">
+            <div class="content"></div>
+            <div class="todo_btn btn_unfinish"></div>
+            <div class="todo_btn btn_delete"></div>
+        </li>
+    </template>
+    <script src="todo.js"></script>
+</body>
+</html>
