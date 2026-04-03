@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 60px 24px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    height: calc(100%-48px);
+    min-width: 1200px;
+    overflow-x: auto;
+}
+.box{
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.left_1,.left_2{
+    width: 280px;
+
+}
+.right{
+    flex: 1;
+    min-width: 600px;
+    transition: all 0.2s ease;
+}
+.title_box{
+    padding: 20px 24px;
+    padding-bottom: 10px;
+}
+
+.title{
+    /* padding: 20px 24px; */
+    /* padding-bottom: 10px; */
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+.title p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 10px;
+    
+}
+.list_1,.list_2{
+    padding: 12px;
+    list-style: none;
+    overflow-y: auto;
+    height: 600px;
+}
+.list_1 li,.list_2 li{
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.5s ease;
+}
+
+.list_1 li:hover,.list_2 li:hover{
+    background: #f5f7fa;
+}
+.left_2 .title_box{
+    position: relative;
+}
+.left_2 button{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+    height: 40px;
+    width: 80px;
+    background: #4080ff;
+    color: white;
+    cursor: pointer;
+}
+.left_2 h2,.right h2{
+    margin-bottom: 15px;
+}
+.delete{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #f53f3f;
+    color: #f53f3f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 18px;
+    font-weight: 500;
+}
+.create_box{
+    padding: 20px;
+    flex:1;
+}
+.create{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #f0f0f0;
+    border-radius: 8px;
+    color: #9ca3af;
+    font-size: 14px;
+    padding :10px;
+}
+
+.create_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 每个工序样式（你拖拽出来的项） */
+.create_list li {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #374151;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    user-select: none;
+}
+
+.items.active{
+    background: #e8f4ff;
+    border-color: #409eff;
+    box-shadow: 0 2px 6px rgba(64, 158, 255, 0.2);
+}
+.drag{
+    user-select: none;
+    cursor: move;
+}
+.right li{
+    position: relative;
+}
+.right li div{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #f53f3f;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
